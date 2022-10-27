@@ -32,16 +32,17 @@ public class Main {
                     System.out.print("Digite um numero: ");
                     vect[i] = sc.nextDouble();
                 }
-
+                sc.nextLine();
                 boolean igual = true;
                 while (igual) {
                     System.out.println("Qual media deseja calcular? (HARMONICA / ARITMETICA)?");
-                    sc.nextLine();
+
                     resposta = sc.nextLine();
                     if (resposta.equals(aritmetica) || resposta.equals(harmonica)) {
                         igual = false;
                     } else {
-                        System.out.println("Por favor, digite HARMONICA ou ARITMETICA");
+                        System.out.print("Por favor, digite HARMONICA ou ARITMETICA");
+                        System.out.println();
                     }
                 }
 
